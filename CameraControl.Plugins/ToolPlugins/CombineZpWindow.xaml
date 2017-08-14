@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
              xmlns:toolPlugins="clr-namespace:CameraControl.Plugins.ToolPlugins"
+             xmlns:classes="clr-namespace:CameraControl.Core.Classes;assembly=CameraControl.Core"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="600">
     <Window.DataContext>
