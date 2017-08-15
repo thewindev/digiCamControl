@@ -1217,10 +1217,10 @@ namespace CameraControl.Devices.Canon
                     throw new Exception("RAW+JPG capture in live view not supported");
                 }
                 IsBusy = true;
-                Camera.PauseLiveview();
-                ErrorCodes.GetCanonException(ResetShutterButton());
+                Camera.TakePictureNoAf();
+              /*  ErrorCodes.GetCanonException(ResetShutterButton());
                 ErrorCodes.GetCanonException(Camera.SendCommand(Edsdk.CameraCommand_PressShutterButton, (int)Edsdk.EdsShutterButton.CameraCommand_ShutterButton_Completely_NonAF));
-                ResetShutterButton();
+                ResetShutterButton();*/
 
                 //if (Camera.IsInHostLiveViewMode)
                 //{
