@@ -1328,9 +1328,9 @@ namespace CameraControl.Devices.Canon
                             viewData.MovieIsRecording = _recording;
                         }
                     }
-                    catch (Exception)
+                    catch (Exception e)
                     {
-                        //Log.Error("Error get live view image ", e);
+                        Log.Error("Error get live view image ", e);
                     }
                     finally
                     {
