@@ -32,6 +32,7 @@ using System;
 using System.Collections.Generic;
 using CameraControl.Devices.Classes;
 using System.Text;
+using System.Threading;
 
 #endregion
 
@@ -562,7 +563,10 @@ namespace CameraControl.Devices
 
         public virtual void WaitForReady()
         {
-            
+            while (IsBusy)
+            {
+                Thread.Sleep(50);
+            }
         }
 
         #endregion
