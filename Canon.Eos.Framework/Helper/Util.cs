@@ -36,8 +36,8 @@ namespace Canon.Eos.Framework.Helper
 
         public static void Assert(uint result, string message, uint propertyId, object propertyValue = null)
         {
-            if (Util.HasFailed(result))
-                throw new EosPropertyException(result, message) { PropertyId = propertyId, PropertyValue = propertyValue };
+            /*if (Util.HasFailed(result))
+                throw new EosPropertyException(result, message) { PropertyId = propertyId, PropertyValue = propertyValue };*/
         }
 
         public static void AssertIf(bool condition, string message, params object[] args)
